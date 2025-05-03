@@ -1,0 +1,96 @@
+body {
+  padding: 0;
+  margin: 0;
+}
+
+.navbar {
+  background-color: #f8f9fa; /* light gray */
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  padding: 10px 30px;
+  align-items: center;
+}
+
+.navbarContent {
+  justify-content: space-between;
+}
+
+.navbarContent ul {
+  gap: 20px;
+  margin-left: 10px;
+}
+
+.navbarContent ul li a {
+  font-weight: 400;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  background: none;
+  border-radius: 25px;
+}
+
+.navbarContent ul li a:hover {
+  background-color: aqua;
+  border-radius: 25px;
+}
+
+#videoContainer {
+  width: 90%;
+  text-align: center;
+  margin: 20px auto;
+}
+
+.videoDisplay {
+  width: 100%;
+  object-fit: cover;
+  border-radius: 25px;
+}
+
+.cardContainer {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 15px;
+  margin-bottom: 24px;
+}
+
+.card-img-top {
+  object-fit: cover;
+  height: 200px;
+}
+
+@media (min-width: 576px) {
+  .cardContainer {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  #videoContainer {
+    width: 50%;
+    text-align: center;
+    margin: 20px auto;
+  }
+
+  .videoDisplay {
+    width: 100%;
+    object-fit: cover;
+    border-radius: 25px;
+  }
+}
+
+@media (min-width: 992px) {
+  .cardContainer {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 15px;
+    margin-bottom: 24px;
+  }
+
+  #videoContainer {
+    width: 60%;
+    height: 30%;
+    text-align: center;
+    margin: 20px auto;
+  }
+
+  .videoDisplay {
+    width: 100%;
+    object-fit: cover;
+    border-radius: 25px;
+  }
+}

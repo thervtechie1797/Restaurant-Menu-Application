@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- ... -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <!-- Ensure to include Bootstrap CSS as it's checked in the test cases -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <!-- ... -->
+  </head>
+  <body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg">
+      <!-- Navbar toggler for mobile view -->
+      <a class="navbar-brand" href="#">My Restaurant</a>
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-bs-toggle="collapse"
+        data-bs-target="#navbarContent"
+      ></button>
+
+      <!-- Search input -->
+      <div class="collapse navbar-collapse navbarContent" id="navbarContent">
+        <input class="form-control" type="text" id="search-input" />
+      </div>
+      <div class="nav">
+        <a class="nav-link" data-filter="all" href="#">All</a>
+        <a class="nav-link" data-filter="starters" href="#">Starters</a>
+        <a class="nav-link" data-filter="mains" href="#">Mains</a>
+        <a class="nav-link" data-filter="desserts" href="#">Desserts</a>
+        <a class="nav-link" data-filter="beverages" href="#">Beverages</a>
+      </div>
+    </nav>
+
+    <div id="videoContainer"></div>
+
+    <!-- Menu items -->
+    <div class="container mt-4 cardBox">
+      <div class="cardContainer"></div>
+    </div>
+
+    <!-- Items will be inserted here by JavaScript -->
+    <script src="app.js"></script>
+    <!-- ... (any other required content) -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>
