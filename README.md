@@ -14,7 +14,6 @@ Each dish is displayed with an image, description, and price, allowing customers
 4. Responsive Design: 
 The app is fully responsive, ensuring it works smoothly on various devices, from desktop screens to mobile phones.
 
-Technologies Used
 I built this app using:
 HTML, CSS, and JavaScript for the front-end to create a dynamic and responsive user interface.
 Bootstrap for styling and ensuring mobile compatibility.
